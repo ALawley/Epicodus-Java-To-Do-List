@@ -1,12 +1,12 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "to-do"
+archivesBaseName = "to-do-list"
 version = '1.0'
 mainClassName = "App"
 
 repositories {
-  mavenCentral()
+ mavenCentral()
 }
 
 dependencies {
