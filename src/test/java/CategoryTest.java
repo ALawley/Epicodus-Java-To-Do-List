@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 
 public class CategoryTest {
 
+  @Rule
+  public ClearRule clearRule = new ClearRule();
+
   @Test
   public void getName_returnsName_true() {
     Category testCategory = new Category("Home");
@@ -43,7 +46,7 @@ public class CategoryTest {
     Category testCategory = new Category("Home");
     assertEquals(Category.find(testCategory.getId()), testCategory);
   }
-  
+
   @Test
   public void addTask_addsTaskToList() {
     Category testCategory = new Category("Bob's Used Tasks");
