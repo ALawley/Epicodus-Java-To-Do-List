@@ -29,5 +29,8 @@ public class Category {
     return mTasks;
   }
 
+  public static void clear() {
+    instances.clear();
+  }
 
 }
