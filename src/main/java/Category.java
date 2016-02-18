@@ -10,6 +10,7 @@ public class Category {
     mName = name;
     instances.add(this);
     mId = instances.size();
+    mTasks = new ArrayList<Task>();
   }
 
   public String getName() {
@@ -27,5 +28,6 @@ public class Category {
   public ArrayList<Task> getTasks() {
     return mTasks;
   }
+
 
 }
