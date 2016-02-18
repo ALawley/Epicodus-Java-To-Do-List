@@ -4,6 +4,7 @@ public class Category {
   private static ArrayList<Category> instances = new ArrayList<Category>();
   private String mName;
   private int mId;
+  private ArrayList<Task> mTasks;
 
   public Category(String name) {
     mName = name;
@@ -21,6 +22,10 @@ public class Category {
 
   public static ArrayList<Category> all() {
     return instances;
+  }
+
+  public ArrayList<Task> getTasks() {
+    return mTasks;
   }
 
 }
