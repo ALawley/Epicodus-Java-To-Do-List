@@ -38,11 +38,11 @@ public class CategoryTest {
     assertEquals(Category.all().size(), 0);
   }
 
-  // @Test
-  // public void find_returnsCategoryWithSameId() {
-  //   Category testCategory = new Category("Home");
-  //   assertEquals(Category.find(testCategory.getId()), testCategory);
-  // }
+  @Test
+  public void find_returnsCategoryWithSameId() {
+    Category testCategory = new Category("Home");
+    assertEquals(Category.find(testCategory.getId()), testCategory);
+  }
   //
   // @Test
   // public void addTask_addsTaskToList() {
